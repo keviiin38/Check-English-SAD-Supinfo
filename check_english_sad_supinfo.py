@@ -141,7 +141,10 @@ def main():
     browser.quit()
 
     if not slot_time:
+        print("Found " + str(len(slot_time)) + "slot(s) available !")
         send_mail(slot_time)
+    else:
+        print("Nothing found ..."
 
 
 main()
